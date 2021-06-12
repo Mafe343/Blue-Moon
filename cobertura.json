@@ -1,0 +1,26 @@
+[
+  {
+    "Ciudad": "Medellin",
+    "Cobertura": "Si"
+  },
+
+  {
+    "Ciudad": "Bogotá",
+    "Cobertura": "Si"
+  },
+
+  {
+    "Ciudad": "Cali",
+    "Cobertura": "No"
+  },
+
+  {
+    "Ciudad": "Bucaramanga",
+    "Cobertura": "Si"
+  },
+
+  {
+    "Ciudad": "Cartagena",
+    "Cobertura": "No"
+  }
+]

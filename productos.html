@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Iconos -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Fuentes -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Tajawal:wght@200&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Quattrocento+Sans&family=Tajawal:wght@200&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Poiret+One&family=Quattrocento+Sans&family=Tajawal:wght@200&display=swap" rel="stylesheet">
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+  <script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script defer src="js/menu.js"></script>
+  <script defer src="js/productos.js"></script>
+  <script defer src="js/ajax.js"></script>
+</head>
+
+<body>
+  <header class="header" id="inicio">
+    <img src="img/bx-menu.svg" alt="" class="hamburguer">
+    <nav class="menu-navegacion">
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="promociones.html">Promociones</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="buscar container py-2 d-flex justify-content-center flex-column">
+      <p class="lead text-center">Conoce más acerca de tu producto favorito</p>
+      <form class="d-flex flex-column justify-content-center align-items-center">
+        <input id="product" type="text" placeholder="Producto" class="form-control my-2">
+        <button id="boton" class="btn btn-success" type="reset" onclick="buscar();">Buscar</button>
+      </form>
+    </div>
+  </header>
+
+  
+  <main>
+
+    <!-- Dividir Cuenta -->
+    <div class="d-flex">
+      <div class="cuenta container py-2 d-flex justify-content-center flex-column">
+        <p class="lead text-center">Divide tu cuenta</p>
+        <div class="d-flex justify-content-center">
+          <img class="calculadora" src="img/calculator.svg" alt="Signos">
+        </div>
+        <form class="d-flex flex-column justify-content-center align-items-center">
+          <input id="value" type="text" placeholder="Ingrese el valor de la cuenta." class="form-control my-2">
+          <input id="personas" type="text" placeholder="Ingrese el número de personas a divir la cuenta." class="form-control my-2">
+          <button class="btn btn-success" id="button-datos" type="reset"></button>
+        </form>
+      </div>
+
+
+      <!-- COBERTURA -------->
+
+      <div class="container">
+        <div class="section">
+          <p class="lead mt-5">Pide tu domicilio</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63634.328019838475!2d-74.1441536!3d4.5678592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1622243177151!5m2!1ses!2sco" width="600" height="165" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <button class="mostrar btn" id="boton-cobertura">
+            Validar cobertura
+          </button>
+
+          <table class="tabla">
+            <thead class="cabeza">
+              <tr>
+                <th class="city">Ciudad</th>
+                <th class="si">Cobertura</th>
+              </tr>
+            </thead>
+            <tbody id="cobertura">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contacto">
+    <div class="contenedor footer-content">
+      <div class="contac-us">
+        <h2 class="brand">Blue Moon</h2>
+        <p>Descubre el sabor de los mejores cafes de Colombia</p>
+      </div>
+      <div class="social-media">
+        <a href="./" class="social-media-icon">
+          <i class='bx bxl-facebook-circle'></i>
+        </a>
+        <a href="./" class="social-media-icon">
+          <i class='bx bxl-twitter' ></i>
+        </a>
+        <a href="./" class="social-media-icon">
+          <i class='bx bxl-instagram-alt' ></i>
+        </a>
+      </div>
+    </div>
+    <div class="line"></div>
+  </footer>
+
+</body>
+</html>
